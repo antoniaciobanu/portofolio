@@ -1,5 +1,10 @@
+{
+	"folders": [
 		{
 			"path": "..\\.."
 		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "one-page-website"
 	}
 }
