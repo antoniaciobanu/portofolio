@@ -1,6 +1,6 @@
 @font-face{
     src:url(fonts/butterfly.otf);
-    font-family:butterfly;
+    font-family:"butterfly";
 	
 }
 
@@ -414,9 +414,9 @@ p {
 	float: left;
 	padding: 40px;
 	width: 250px;
-    height: 250px;
+    	height: 250px;
 	object-fit: contain;
-    margin-left: 80px;
+    	margin-left: 80px;
   	
 	
   }
