@@ -1,8 +1,10 @@
-@font-face{
-    src:url(fonts/butterfly.otf);
-    font-family:butterfly;
+/*@font-face{
+    src:url(fonts/Butterfly.otf) format("opentype") ;
+    font-family:"butterfly";
 	
-}
+}*/
+/*@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Roboto+Slab:wght@300&family=Sansita+Swashed:wght@500&display=swap');
 
 
 * {
@@ -81,7 +83,7 @@ p {
 	font-size: 4rem;
 	/*text-transform: uppercase;*/
 	color: white;
-    font-family:butterfly;
+	font-family: 'Chilanka', cursive;
 }
 .brand h1 span {
 	color: orangered;
@@ -172,6 +174,7 @@ p {
 	cursor: pointer;
 	transform: scale(.8);
 	margin-right: 20px;
+	overflow: hidden;
 }
 #header .hamburger:after {
 	position: absolute;
@@ -284,9 +287,10 @@ p {
 /* Projects section */
 #projects .projects {
 	flex-direction: column;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: 100px 0;
+	
 }
 #projects .projects-header h1 {
 	margin-bottom: 50px;
@@ -296,6 +300,7 @@ p {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	
 }
 #projects .project-item {
 	display: flex;
@@ -305,7 +310,7 @@ p {
 	width: 80%;
 	margin: 20px auto;
 	overflow: hidden;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 #projects .project-info {
 	padding: 30px;
@@ -317,6 +322,23 @@ p {
 	flex-direction: column;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
+}
+.button{
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid orangered;
+	font-size: 2rem;
+	border-radius: 20px;
+	letter-spacing: .1rem;
+	margin-top: 20px;
+	transition: .3s ease;
+	transition-property: background-color, color;
+	
+}
+.button:hover{
+	background-color: orangered;
 }
 #projects .project-info h1 {
 	font-size: 4rem;
@@ -344,7 +366,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: .5;
+	opacity: .2;
 }
 #projects .project-img img {
 	transition: .3s ease transform;
@@ -404,7 +426,7 @@ p {
 
 /* Skills Section*/
 .container2 {
-	min-height: 50vh;
+	min-height: 40vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -412,22 +434,17 @@ p {
 }
 .column {
 	float: left;
-	padding: 40px;
+	padding: 50px;
 	width: 250px;
     height: 250px;
 	object-fit: contain;
-    margin-left: 80px;
+    margin-left: 50px;
   	
 	
   }
   
   
-  .row::after {
-	content: "";
-	clear: both;
-	display: table;
-	
-  }
+
   /*End Skills Section*/
 
 /*Soft Skills Section*/
@@ -440,6 +457,7 @@ p {
 	text-align: center;
 	padding: 1rem 80px;
 	font-size: 1.2rem;
+	
 
 }
 
@@ -459,6 +477,7 @@ p {
 
 .skill-icon{
 	width: 120px;
+	height: 120px;
 
 }
 h3{
@@ -619,6 +638,35 @@ h3{
 	}
 }
 /* End Keyframes */
+/* media queries*/
+
+@media screen and (max-width: 600px){
+	#contact .contact{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 20px 0 10px 0;
+	}
+	#contact .contact-in{
+		flex-direction: column;
+		
+	}
+	#soft .soft {
+		display: grid;
+		grid-template-columns: repeat(1);
+		justify-content: center;
+		align-items: center;
+		grid-gap: 1rem;
+	}
+
+	#skills .row{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-left: 20px;
+	}
+}
+
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
@@ -636,13 +684,7 @@ h3{
 	}
 	/* End Hero */
 
-	/* Services Section */
-	#services .service-bottom .service-item {
-		flex-basis: 45%;
-		margin: 2.5%;
-	}
-	/* End Services Section */
-
+	
 	/* Project */
 	#projects .project-item {
 		flex-direction: row;
@@ -688,7 +730,10 @@ h3{
 		text-align: left;
 	}
 	/* End About */
-
+	/*skills*/
+	
+	/*soft skills */
+	
 	/* contact  */
 	#contact .contact {
 		flex-direction: column;
@@ -755,3 +800,4 @@ h3{
 	}
 }
 /* End  Media Query For Desktop */
+
