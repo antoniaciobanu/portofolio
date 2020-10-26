@@ -324,7 +324,6 @@ p {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
-	
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
@@ -340,7 +339,7 @@ p {
 	font-size: 2rem;
 	border-radius: 20px;
 	letter-spacing: .1rem;
-	margin-top: 160px;
+	margin-top: 110px;
 	margin-left: 10px;
 	transition: .3s ease;
 	transition-property: background-color, color;
@@ -349,6 +348,8 @@ p {
 .button:hover{
 	background-color: orangered;
 }
+
+
 #projects .project-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
@@ -360,6 +361,7 @@ p {
 }
 #projects .project-info p {
 	color: white;
+	font-size: 15px;
 }
 #projects .project-img {
 	flex-basis: 50%;
