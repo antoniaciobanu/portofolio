@@ -307,6 +307,7 @@ p {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	border-radius: 10px;
 	
 }
 #projects .project-item {
@@ -323,7 +324,7 @@ p {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
-	display: flex;
+	
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
@@ -339,7 +340,8 @@ p {
 	font-size: 2rem;
 	border-radius: 20px;
 	letter-spacing: .1rem;
-	margin-top: 20px;
+	margin-top: 160px;
+	margin-left: 10px;
 	transition: .3s ease;
 	transition-property: background-color, color;
 	
